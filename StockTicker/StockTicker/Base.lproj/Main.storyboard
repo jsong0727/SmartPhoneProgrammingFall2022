@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StockTicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stock Symbol " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WZj-oD-mgg">
+                                <rect key="frame" x="5" y="406" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pYc-xu-SDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfM-i6-RPn">
+                                <rect key="frame" x="5" y="64" width="383" height="337"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZN-GX-lAF">
+                                <rect key="frame" x="5" y="467" width="383" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="Pj2-ys-jeH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="oU5-kd-rcB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Stock Price"/>
+                                <connections>
+                                    <action selector="getStockPrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFC-eT-ohm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sZN-GX-lAF" secondAttribute="bottom" constant="311" id="3mX-dR-Mpk"/>
+                            <constraint firstItem="WZj-oD-mgg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5HU-qt-PUh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZj-oD-mgg" secondAttribute="trailing" constant="5" id="6kc-uY-8PJ"/>
+                            <constraint firstItem="sZN-GX-lAF" firstAttribute="leading" secondItem="TfM-i6-RPn" secondAttribute="leading" id="8TT-xQ-MNn"/>
+                            <constraint firstItem="WZj-oD-mgg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QCc-sB-8eg"/>
+                            <constraint firstItem="sZN-GX-lAF" firstAttribute="top" secondItem="WZj-oD-mgg" secondAttribute="bottom" constant="21" id="Swr-Hm-Irs"/>
+                            <constraint firstItem="TfM-i6-RPn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Xb5-a9-qfK"/>
+                            <constraint firstItem="sZN-GX-lAF" firstAttribute="trailing" secondItem="TfM-i6-RPn" secondAttribute="trailing" id="dWr-jV-q5j"/>
+                            <constraint firstItem="sZN-GX-lAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="eMR-7m-IX3"/>
+                            <constraint firstItem="WZj-oD-mgg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="gaK-xm-kkE"/>
+                            <constraint firstItem="WZj-oD-mgg" firstAttribute="top" secondItem="TfM-i6-RPn" secondAttribute="bottom" constant="5" id="jcA-5P-bnu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sZN-GX-lAF" secondAttribute="trailing" constant="5" id="r6r-uR-30K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtStockSymbol" destination="WZj-oD-mgg" id="wKm-kt-ROv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
