@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func getStockPrice(_ sender: Any) {
-        let apiKey = "e3274c22b2fc4cdcbae825ef3964bcb9"
+        let apiKey = "0"
         
         var url = "https://financialmodelingprep.com/api/v3/quote/"
         url += txtStockSymbol.text!

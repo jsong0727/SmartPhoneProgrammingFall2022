@@ -14,6 +14,8 @@
 		468D0F1329453EA60085C2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468D0F1229453EA60085C2DE /* Assets.xcassets */; };
 		468D0F1629453EA60085C2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468D0F1429453EA60085C2DE /* LaunchScreen.storyboard */; };
 		468D0F1E294542750085C2DE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D0F1D294542750085C2DE /* DetailsViewController.swift */; };
+		A76FDADB2945657F00CECEE0 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76FDADA2945657F00CECEE0 /* Stock.swift */; };
+		F03809D86ACEB2F2491ABCAB /* Pods_GetStockPrices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86C5DE7B4F4D712C1A30FD /* Pods_GetStockPrices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		468D0F1529453EA60085C2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		468D0F1729453EA60085C2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468D0F1D294542750085C2DE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		49D81D552476120161763CD1 /* Pods-GetStockPrices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetStockPrices.release.xcconfig"; path = "Target Support Files/Pods-GetStockPrices/Pods-GetStockPrices.release.xcconfig"; sourceTree = "<group>"; };
+		A76FDADA2945657F00CECEE0 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		DD86C5DE7B4F4D712C1A30FD /* Pods_GetStockPrices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetStockPrices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE51F7B7113B1BBE7BEB5375 /* Pods-GetStockPrices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetStockPrices.debug.xcconfig"; path = "Target Support Files/Pods-GetStockPrices/Pods-GetStockPrices.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03809D86ACEB2F2491ABCAB /* Pods_GetStockPrices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				468D0F0829453EA40085C2DE /* GetStockPrices */,
 				468D0F0729453EA40085C2DE /* Products */,
+				56EB9F28989E650396E61CE0 /* Pods */,
+				A2FF840A18EB46D3E1C4EE51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +75,26 @@
 				468D0F1429453EA60085C2DE /* LaunchScreen.storyboard */,
 				468D0F1729453EA60085C2DE /* Info.plist */,
 				468D0F1D294542750085C2DE /* DetailsViewController.swift */,
+				A76FDADA2945657F00CECEE0 /* Stock.swift */,
 			);
 			path = GetStockPrices;
+			sourceTree = "<group>";
+		};
+		56EB9F28989E650396E61CE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE51F7B7113B1BBE7BEB5375 /* Pods-GetStockPrices.debug.xcconfig */,
+				49D81D552476120161763CD1 /* Pods-GetStockPrices.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2FF840A18EB46D3E1C4EE51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD86C5DE7B4F4D712C1A30FD /* Pods_GetStockPrices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 468D0F1A29453EA60085C2DE /* Build configuration list for PBXNativeTarget "GetStockPrices" */;
 			buildPhases = (
+				A491A0F84E26323509AD5274 /* [CP] Check Pods Manifest.lock */,
 				468D0F0229453EA40085C2DE /* Sources */,
 				468D0F0329453EA40085C2DE /* Frameworks */,
 				468D0F0429453EA40085C2DE /* Resources */,
+				83746602CC5EE2A2193DA274 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83746602CC5EE2A2193DA274 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetStockPrices/Pods-GetStockPrices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetStockPrices/Pods-GetStockPrices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetStockPrices/Pods-GetStockPrices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A491A0F84E26323509AD5274 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetStockPrices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		468D0F0229453EA40085C2DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +215,7 @@
 				468D0F0E29453EA40085C2DE /* ViewController.swift in Sources */,
 				468D0F0A29453EA40085C2DE /* AppDelegate.swift in Sources */,
 				468D0F0C29453EA40085C2DE /* SceneDelegate.swift in Sources */,
+				A76FDADB2945657F00CECEE0 /* Stock.swift in Sources */,
 				468D0F1E294542750085C2DE /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +358,7 @@
 		};
 		468D0F1B29453EA60085C2DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE51F7B7113B1BBE7BEB5375 /* Pods-GetStockPrices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +387,7 @@
 		};
 		468D0F1C29453EA60085C2DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D81D552476120161763CD1 /* Pods-GetStockPrices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

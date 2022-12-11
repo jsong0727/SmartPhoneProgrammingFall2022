@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "670A4E58-E676-4DF7-9D4A-A3F47447CB44"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tourist App/CityTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CityTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - d60af8f639a28372"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.lblCity.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - 977edddbbf34bf6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.lblCity.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - 39884402a35cf87f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.lblCity.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - 49298e42fd40cc23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.lblCity.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - d5191a54d8f24aba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Tourist_App.CityTableViewCell"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "12BB5F30-7A42-4F7C-B6A3-B32E5DC6E0F3 - 88877c90d3b2b358"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tourist_App.CityTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Tourist_App.CityTableViewCell&gt;"
+                  moduleName = "Tourist App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiayinsong/Documents/SmartPhoneProgrammingFall2022/Tourist%20App/Tourist%20App/CityTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

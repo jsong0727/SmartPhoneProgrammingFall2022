@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  GetStockPrices
 //
-//  Created by Jiayin on 10/12/22.
+//  Created by Jiayin Song 10/12/22.
 //
 
 import UIKit

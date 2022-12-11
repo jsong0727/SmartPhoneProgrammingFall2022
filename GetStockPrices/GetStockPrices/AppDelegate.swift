@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  GetStockPrices
 //
-//  Created by Jiayin on 10/12/22.
+//  Created by Jiayin Song on 10/12/22.
 //
 
 import UIKit
