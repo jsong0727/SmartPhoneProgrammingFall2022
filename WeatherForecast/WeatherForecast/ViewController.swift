@@ -11,7 +11,9 @@ import Alamofire
 import SwiftyJSON
 import SwiftSpinner
 
-class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    
     
     let locationManager = CLLocationManager()
     var temps = [String]()
@@ -113,22 +115,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
                 
                 let forcastJSON = JSON(forecast.1)
                 let temp = forcastJSON["temp"].floatValue
-                let condition = forcastJSON["condition"].stringValue
+                let condition = forcastJSON["conditions"].stringValue
                 let str = "Temperature = \(temp)'|, \(condition)"
                 self.temps.append(str)
             }
             self.tblView.reloadData()
         }
     }
-    func tblVeiw(_ tblView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return temps.count
     }
     
-    internal func tblView(_ tblView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = temps[indexPath.row]
         return cell
     }
+//    func tblVeiw(_ tblView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//    }
+//
+//    func tblView(_ tblView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//    }
     
     
 }
